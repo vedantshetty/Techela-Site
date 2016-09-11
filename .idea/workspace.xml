@@ -23,52 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reverbthefest.com/about.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="513" column="29" selection-start-line="513" selection-start-column="29" selection-end-line="513" selection-end-column="29" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="406" column="33" selection-start-line="406" selection-start-column="33" selection-end-line="406" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reverbthefest.com/events.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="561" column="30" selection-start-line="561" selection-start-column="30" selection-end-line="561" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="664" column="6" selection-start-line="664" selection-start-column="6" selection-end-line="664" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="202" column="20" selection-start-line="202" selection-start-column="15" selection-end-line="202" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="519">
+              <caret line="47053" column="0" selection-start-line="47053" selection-start-column="0" selection-end-line="47053" selection-end-column="0" />
+              <folding>
+                <marker date="1473582308847" expanded="true" signature="873561:873584" ph="..." />
+                <marker date="1473582308847" expanded="true" signature="1940302:1940312" ph="..." />
+                <marker date="1473582308847" expanded="true" signature="1940396:1940406" ph="..." />
+                <marker date="1473582308847" expanded="true" signature="1940551:1940561" ph="..." />
+                <marker date="1473582308847" expanded="true" signature="1940644:1940654" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,6 +77,7 @@
         <option value="$PROJECT_DIR$/reverbthefest.com/contact.html" />
         <option value="$PROJECT_DIR$/reverbthefest.com/events.html" />
         <option value="$PROJECT_DIR$/reverbthefest.com/index.html" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -140,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,10 +134,6 @@
               <option name="myItemId" value="Techela" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reverbthefest.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -170,82 +142,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Techela" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reverbthefest.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Reverb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Techela" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reverbthefest.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fullpage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Reverb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Techela" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reverbthefest.com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Reverb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Techela" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reverbthefest.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Reverb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Techela" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,13 +170,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/College/Supra" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
@@ -367,6 +268,8 @@
       <workItem from="1473393820089" duration="554000" />
       <workItem from="1473535735008" duration="97000" />
       <workItem from="1473570587291" duration="5705000" />
+      <workItem from="1473579713366" duration="748000" />
+      <workItem from="1473581858728" duration="480000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Javascript&#10;">
       <created>1472816834795</created>
@@ -379,7 +282,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50715000" />
+    <option name="totallyTimeSpent" value="51943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -443,137 +346,25 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7425">
-          <caret line="495" column="37" selection-start-line="495" selection-start-column="37" selection-end-line="495" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html" />
     <entry file="file://$PROJECT_DIR$/www.electricenjin.com/images/electricenjintwitter.png" />
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4800">
-          <caret line="320" column="31" selection-start-line="320" selection-start-column="31" selection-end-line="320" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573330">
-          <caret line="38222" column="0" selection-start-line="38222" selection-start-column="0" selection-end-line="38222" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7425">
-          <caret line="495" column="37" selection-start-line="495" selection-start-column="37" selection-end-line="495" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/js/script.js" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/about.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html" />
     <entry file="file://$PROJECT_DIR$/www.electricenjin.com/images/electricenjintwitter.png" />
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9945">
-          <caret line="663" column="10" selection-start-line="562" selection-start-column="4" selection-end-line="663" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146505">
-          <caret line="9767" column="17" selection-start-line="9767" selection-start-column="17" selection-end-line="9767" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/fullpage/jquery.fullPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/fullpage/jquery.fullPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/styles.css" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/fullpage/jquery.fullPage.css" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/styles.css" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/fullpage/jquery.fullPage.css" />
     <entry file="file://$PROJECT_DIR$/backblue.gif" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/reverbthefest.com/images/pattern-bg-2.html" />
     <entry file="file://$PROJECT_DIR$/electricenjin.com/images/team/chris_poly.svg" />
     <entry file="file://$PROJECT_DIR$/electricenjin.com/images/team/chris_poly.svg.readme" />
@@ -583,43 +374,28 @@
     <entry file="file://$PROJECT_DIR$/electricenjin.com/images/meta-icons/apple-touch-icon-60x60-precomposed.png" />
     <entry file="file://$PROJECT_DIR$/fonts.googleapis.com/css7c18.css" />
     <entry file="file://$PROJECT_DIR$/electricenjin.com/images/team/aniel_poly.svg" />
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/queryloader2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/fullpage/jquery.fullPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/queryloader2.min.js" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/vendor/fullpage/jquery.fullPage.css" />
     <entry file="file://$PROJECT_DIR$/electricenjin.com/restserver.html" />
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/images/close.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/images/close.svg" />
     <entry file="file://$PROJECT_DIR$/reverbthefest.com/images/logo.svg" />
     <entry file="file://$PROJECT_DIR$/geo3.ggpht.com/cbka209.jpg" />
     <entry file="file://$PROJECT_DIR$/www.google.com/maps/vt/data=EHXqsPl7UOi2E00zA5keUComnrVcuczI4_R5mpWbLtI_RnMpDnZYhsrmFoIf5gNS0rCm8oNRe-Ca0A.png" />
     <entry file="file://$PROJECT_DIR$/reverbthefest.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/index.html" />
     <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/assets/img/zoom-out.html" />
     <entry file="file://$PROJECT_DIR$/www.electricenjin.com/images/facebookshare.png" />
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/images/meta-icons/apple-touch-icon-180x180-precomposed.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/images/meta-icons/apple-touch-icon-180x180-precomposed.png" />
     <entry file="file://$PROJECT_DIR$/www.electricenjin.com/images/electricenjintwitter.png" />
-    <entry file="file://$PROJECT_DIR$/plus.google.com/+ElectricEnjinLLCNorwalk/about.html">
+    <entry file="file://$PROJECT_DIR$/plus.google.com/+ElectricEnjinLLCNorwalk/about.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/%s/profile4d6d.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/extras/et-line.css" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/js/script.js" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/about.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/styles.css" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/events.html" />
+    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -627,67 +403,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/%s/profile4d6d.html">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/extras/et-line.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="45575" column="46" selection-start-line="45575" selection-start-column="40" selection-end-line="45575" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="513" column="29" selection-start-line="513" selection-start-column="29" selection-end-line="513" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="202" column="20" selection-start-line="202" selection-start-column="15" selection-end-line="202" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="406" column="33" selection-start-line="406" selection-start-column="33" selection-end-line="406" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="561" column="30" selection-start-line="561" selection-start-column="30" selection-end-line="561" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="664" column="6" selection-start-line="664" selection-start-column="6" selection-end-line="664" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="519">
+          <caret line="47053" column="0" selection-start-line="47053" selection-start-column="0" selection-end-line="47053" selection-end-column="0" />
+          <folding>
+            <marker date="1473582308847" expanded="true" signature="873561:873584" ph="..." />
+            <marker date="1473582308847" expanded="true" signature="1940302:1940312" ph="..." />
+            <marker date="1473582308847" expanded="true" signature="1940396:1940406" ph="..." />
+            <marker date="1473582308847" expanded="true" signature="1940551:1940561" ph="..." />
+            <marker date="1473582308847" expanded="true" signature="1940644:1940654" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
