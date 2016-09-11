@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Techfest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<script src="vendor/queryloader2.min.js" type="text/javascript"></script>
+
+
+	<link rel="apple-touch-icon" sizes="180x80" href="images/meta-icons/apple-touch-icon-180x180-precomposed.png">
+	<link href="https://fonts.googleapis.com/css?family=Economica|Source+Sans+Pro:700,400,300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="vendor/fullpage/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+      QueryLoader2(document.querySelector("body"), {
+          barColor: "#00aeef",
+          backgroundColor: "#000",
+          percentage: false,
+          barHeight: 1,
+          minimumTime: 1000,
+          fadeOutTime: 1000,
+          deepSearch:true
+      });
+  });
+</script>
+
+<script type="x-shader/x-vertex" id="vertexShader">
+			varying vec3 vWorldPosition;
+			void main() {
+				vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+				vWorldPosition = worldPosition.xyz;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+			}
+		</script>
+<script type="x-shader/x-fragment" id="fragmentShader">
+			uniform vec3 topColor;
+			uniform vec3 bottomColor;
+			uniform float offset;
+			uniform float exponent;
+			varying vec3 vWorldPosition;
+			void main() {
+				float h = normalize( vWorldPosition + offset ).y;
+				gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h , 0.0), exponent ), 0.0 ) ), 1.0 );
+			}
+		</script>
+<div class="content" >
+    <nav id="the-nav" class="main-nav dark transparent stick-fixed">
+        <div id="nav-background" class="navbar-background"></div>
+        <div class="nav-wrapper"></div>
+        <div class="full-wrapper relative clearfix">
+            <div class="nav-logo-wrap local-scroll">
+                <a href="index.html" class="logo">
+                    <svg
+
+                            id="svglogo"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 140 74"
+                            version="1.1">
+
+                        <defs
+                                id="defs5861" />
+                        <style
+                                type="text/css"
+                                id="style5815">
+                            .st0{fill:#00aeef;}
+                            .st1{fill:#FFFFFF;fill-opacity:0;}
+                        </style>
+                        <g
+                                id="g5817"
+                                transform="translate(0.5736468,-1.065343)">
+                            <g
+                                    id="g5819"
+                                    transform="translate(-7.7310315,-3.4919263)">
+                                <g
+                                        id="dotsAll">
+                                    <polygon
+                                            id="dotStrategy"
+                                            class="st0"
+                                            points="74.3,24.3 78.5,23.5 78.5,19.4 74.3,20.2 "
+                                            style="fill:#00aeef" />
+                                    <polygon
+                                            id="dotTech"
+                                            class="st0"
+                                            points="86.9,9.2 82.7,10 82.7,14.2 86.9,13.2 "
+                                            style="fill:#00aeef" />
+                                    <polygon
+                                            id="dotCreative"
+                                            class="st0"
+                                            points="86.9,17.8 82.7,18.6 82.7,22.7 86.9,21.9 "
+                                            style="fill:#00aeef" />
+                                </g>
+                                <g
+                                        id="logoAll">
+                                    <path
+                                            d="m 27.24796,37.749091 2.786413,-0.780638 0,3.903199 3.715218,-0.780641 0,3.512876 -3.715218,0.780641 0,8.196716 c 0,0.780637 0.619203,1.170959 1.238406,1.170959 l 4.02482,-0.780641 0,3.122562 -4.02482,0.780638 c -2.16721,0.780638 -3.715216,-0.780638 -3.715216,-3.512881 l -0.309603,-15.61279 0,0 z"
+                                            class="st0"
+                                            id="t"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef" />
+                                    <path
+                                            id="e1"
+                                            class="st0"
+                                            d="m 41.697764,48.698067 3.11762,-0.716812 0,-1.194683 c 0,-0.477876 -0.415683,-0.71681 -0.831365,-0.71681 l -3.325461,0.71681 c -0.415682,0.23895 -0.831365,0.477876 -0.831365,0.955745 l 0,4.06193 c 0,0.477873 0.415683,0.716811 0.831365,0.716811 l 5.819555,-1.433624 0,2.150431 -5.819555,1.433623 c -1.454888,0.477876 -2.701936,-0.477874 -2.701936,-2.15043 l 0,-4.300864 c 0,-1.672559 1.247048,-3.10618 2.701936,-3.345117 l 3.533302,-0.716809 c 1.454889,-0.477876 2.701936,0.477873 2.701936,2.150428 l 0,3.10618 -4.988191,1.194683 -0.207831,-1.911492 0,0 0,0 z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef" />
+                                    <path
+                                            id="c1"
+                                            class="st0"
+                                            d="m 57.412502,50.719022 -5.895022,1.408036 c -1.473754,0.469345 -2.736973,-0.469345 -2.736973,-2.112053 l 0,-4.224106 c 0,-1.642707 1.263219,-3.050743 2.736973,-3.285415 l 3.57912,-0.704018 c 1.473756,-0.469345 2.736975,0.469345 2.736975,2.112053 l 0,1.173363 -1.894828,0.469345 0,-1.173363 c 0,-0.469345 -0.421073,-0.704017 -0.842147,-0.704017 l -3.57912,0.704017 c -0.421072,0.234673 -0.842145,0.469345 -0.842145,0.93869 l 0,3.989433 c 0,0.469345 0.421073,0.704018 0.842145,0.704018 l 5.895022,-1.408035 c 0,-0.234673 0,2.112052 0,2.112052 z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef" />
+                                    <path
+                                            id="t1"
+                                            class="st0"
+                                            d="m 59.767043,31.968082 2.357467,-0.264286 0.138948,3.288225 c -0.180287,2.278484 -0.08464,3.720185 -0.09916,5.495851 1.722931,-0.931284 3.808961,-0.872581 7.365022,0.276011 l -0.317708,9.466415 c -0.602171,0.393116 -1.204346,0.753375 -1.806516,0.03525 C 67.005021,49.788441 67.000222,43.099017 67.102272,42.983143 67.918934,42.055751 64.137378,42.373 64.731745,42.373 l -1.774988,0.50843 -0.138948,6.53622 -0.03155,0.685743 c -2.373996,0.472752 -2.541118,0.306493 -2.541118,-1.751182 z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef"
+                                            sodipodi:nodetypes="ccccccsscccccc" />
+                                    <path
+                                            id="e2"
+                                            class="st0"
+                                            d="m 76.985829,41.638044 3.272395,-0.725856 0,-1.20976 c 0,-0.483904 -0.436319,-0.725857 -0.872639,-0.725857 l -3.708715,0.725857 c -0.436319,0.241952 -0.872638,0.483903 -0.872638,0.967808 l 0,4.113186 c 0,0.483904 0.436319,0.725856 0.872638,0.725856 l 6.108471,-1.451713 0,2.17757 -6.108471,1.451712 c -1.527118,0.483904 -2.836076,-0.483903 -2.836076,-2.177569 l 0,-4.355138 c 0,-1.693664 1.308958,-3.145378 2.836076,-3.387331 l 3.708715,-0.725856 c 1.527118,-0.483905 2.836076,0.483904 2.836076,2.177571 l 0,3.145377 -5.235832,1.209761 c 0,-0.241952 0,-1.935618 0,-1.935618 z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef" />
+                                    <path
+                                            id="l1"
+                                            class="st0"
+                                            d="m 86.99242,30.365734 2.515575,-0.524962 c -0.09802,3.467782 -0.117561,7.451668 0,12.336612 0.01258,0.524828 0.559017,0.787442 1.118034,0.787442 l 2.236066,-0.524961 0,2.36233 -2.236066,0.524962 C 88.66947,45.852119 86.99242,44.802195 86.99242,42.964826 l 0,-12.599092 z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef"
+                                            sodipodi:nodetypes="ccsccccscc" />
+                                    <path
+                                            id="c2"
+                                            class="st0"
+                                            d="m 107.17999,42.558039 -5.56178,0.938238 c -1.980701,0.607162 -3.678442,-0.07942 -3.678442,-2.204479 l 0,-5.464454 c 0,-2.125066 1.697741,-3.946551 3.678442,-4.250131 l 4.81027,-0.910743 c 1.9807,-0.607161 3.67844,0.607162 3.67844,2.732227 l -0.058,8.314155 -2.03896,0.544979 -0.4497,-8.251972 c -0.0331,-0.606127 -0.56591,-0.910743 -1.13183,-0.910743 l -4.81027,1.214324 c -0.56591,0.30358 -1.13183,0.607161 -1.13183,1.214323 l 0,5.160873 c 0,0.607162 4.66506,-0.760467 5.23098,-0.760467 l 1.05101,-0.343881 z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef"
+                                            sodipodi:nodetypes="ccssccsccsccssccc" />
+                                    <path
+                                            id="rightbracket"
+                                            class="st0"
+                                            d="m 111.7,13 c -0.4,0 -0.9,0.1 -1.3,0.2 l -19.4,3.7 0,4.3 20.2,-3.9 c 1.3,-0.2 2.5,0.6 2.5,2 l 0,23.1 c 0,1.3 -1.1,2.7 -2.5,3 l -28.6,5.5 c -0.1,1.7 -0.5,3.4 -1.4,4.5 l 30.9,-6 c 3.3,-0.6 5.9,-3.7 5.9,-7 l 0,-23.1 C 117.9,15.6 115.2,13 111.7,13 Z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef" />
+                                    <path
+                                            id="leftbracket"
+                                            class="st0"
+                                            d="m 66,53.9 -39.3,7.6 c -1.3,0.2 -2.5,-0.6 -2.5,-2 l 0,-23.1 c 0,-1.3 1.1,-2.7 2.5,-3 l 43.4,-8.4 0,-0.1 0,-4.1 -44.2,8.5 C 22.5,29.9 20,33 20,36.4 l 0,23.1 c 0,3.5 2.8,6.2 6.2,6.2 0.4,0 0.9,-0.1 1.3,-0.2 l 38.5,-7.4 0,-4.2 0,0 z"
+                                            inkscape:connector-curvature="0"
+                                            style="fill:#00aeef" />
+                                </g>
+                            </g>
+                        </g>
+                        <g
+                                id="Layer_2">
+                            <path
+                                    id="c_leftbracket"
+                                    class="st1"
+                                    d="M21.8,46c0.8,0,1.5,0.7,1.5,1.5S22.6,49,21.8,49s-1.5-0.7-1.5-1.5S21,46,21.8,46z" />
+                            <path
+                                    id="c_e3"
+                                    class="st1"
+                                    d="M38.8,44c0.8,0,1.5,0.7,1.5,1.5S39.6,47,38.8,47s-1.5-0.7-1.5-1.5S38,44,38.8,44z" />
+                            <path
+                                    id="c_n1"
+                                    class="st1"
+                                    d="M60.8,41c0.8,0,1.5,0.7,1.5,1.5S61.6,44,60.8,44s-1.5-0.7-1.5-1.5S60,41,60.8,41z" />
+                            <path
+                                    id="c_j1"
+                                    class="st1"
+                                    d="M76.8,48c0.8,0,1.5,0.7,1.5,1.5S77.6,51,76.8,51s-1.5-0.7-1.5-1.5S76,48,76.8,48z" />
+                            <path
+                                    id="c_i2"
+                                    class="st1"
+                                    d="M84.8,31c0.8,0,1.5,0.7,1.5,1.5S85.6,34,84.8,34s-1.5-0.7-1.5-1.5S84,31,84.8,31z" />
+                            <path
+                                    id="c_n2"
+                                    class="st1"
+                                    d="M99.8,37c0.8,0,1.5,0.7,1.5,1.5s-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5S99,37,99.8,37z" />
+                            <path
+                                    id="c_rightbracket"
+                                    class="st1"
+                                    d="M115.8,30c0.8,0,1.5,0.7,1.5,1.5s-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5S115,30,115.8,30z" />
+                            <path
+                                    id="c_e1"
+                                    class="st1"
+                                    d="M30.8,21c0.8,0,1.5,0.7,1.5,1.5S31.6,24,30.8,24s-1.5-0.7-1.5-1.5S30,21,30.8,21z" />
+                            <path
+                                    id="c_l1"
+                                    class="st1"
+                                    d="M37.8,19c0.8,0,1.5,0.7,1.5,1.5S38.6,22,37.8,22s-1.5-0.7-1.5-1.5S37,19,37.8,19z" />
+                            <path
+                                    id="c_e2"
+                                    class="st1"
+                                    d="M43.8,18c0.8,0,1.5,0.7,1.5,1.5S44.6,21,43.8,21s-1.5-0.7-1.5-1.5S43,18,43.8,18z" />
+                            <path
+                                    id="c_c1"
+                                    class="st1"
+                                    d="M51.8,17c0.8,0,1.5,0.7,1.5,1.5S52.6,20,51.8,20s-1.5-0.7-1.5-1.5S51,17,51.8,17z" />
+                            <path
+                                    id="c_t1"
+                                    class="st1"
+                                    d="M57.8,15c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5C56.3,15.7,57,15,57.8,15z" />
+                            <path
+                                    id="c_r1"
+                                    class="st1"
+                                    d="M64.8,14c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5c-0.8,0-1.5-0.7-1.5-1.5C63.3,14.7,64,14,64.8,14z" />
+                            <path
+                                    id="c_i1a"
+                                    class="st1"
+                                    d="M69.8,14c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5C68.3,14.7,69,14,69.8,14z" />
+                            <path
+                                    id="c_i1b"
+                                    class="st1"
+                                    d="M69.8,10c0.8,0,1.5,0.7,1.5,1.5S70.6,13,69.8,13s-1.5-0.7-1.5-1.5S69,10,69.8,10z" />
+                            <path
+                                    id="c_c2"
+                                    class="st1"
+                                    d="M75.8,12c0.8,0,1.5,0.7,1.5,1.5S76.6,15,75.8,15s-1.5-0.7-1.5-1.5S75,12,75.8,12z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="mobile-nav navbar-toggle">
+                <div class="toggle-container">
+                    <div id="open">
+                        <svg id="Layer_2" x="0px" y="0px" viewBox="0 0 13.8 13.8">
+                            <style type="text/css">
+                                .st0{fill:#00AEEF;}
+                            </style>
+                            <g id="open-btn">
+                                <path class="st0" d="M0,3.6h13.8v0.8H0V3.6z"></path>
+                                <path class="st0" d="M0,6.6h13.8v0.8H0V6.6z"></path>
+                                <path class="st0" d="M0,9.6h13.8v0.8H0V9.6z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="close">
+                        <svg id="Layer_1" x="0px" y="0px" viewBox="0 0 13.8 13.8">
+                            <style type="text/css">
+                                .st0{fill:#0099FF;}
+                            </style>
+                            <g>
+                                <rect x="-0.4" y="3.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 4.0753 -1.6478)" class="st0" width="8.8" height="0.6"></rect>
+                                <rect x="5.4" y="3.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 19.58 8.054070e-02)" class="st0" width="8.8" height="0.6"></rect>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-nav desktop-nav">
+                <ul class="clearlist scroll-nav local-scroll">
+                    <li class="home">
+                        <a id="home-link" href="index.html" class="nav-link">
+                            <span data-text="home">Home</span>
+                        </a>
+                    </li>
+                    <li class="about">
+                        <a href="about.html" class="nav-link">
+                            <span data-text="About">About Us</span></a>
+                    </li>
+                    <li class="work">
+                        <a href="events.html" class="nav-link"><span data-text="Featured Events">Featured Events</span></a>
+                    </li>
+                    <li class="contact"><a href="contact.html" class="nav-link"><span
+                            data-text="Contact Us">Contact Us</span></a></li>
+                    <li class="nav-icon">
+                        <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"><a
+                                href="https://www.facebook.com/techela.16/" target="_blank"><i
+                                class="hi-icon fa fa-facebook"></i></a></div>
+                    </li>
+                    <li class="nav-icon">
+                        <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"><a
+                                href="" target="_blank"><i
+                                class="hi-icon fa fa-twitter"></i></a></div>
+                    </li>
+                </ul>
+            </div>
+</div>
+</nav>
+    <div id="jumbotron"></div>
+    <div id="fullpage">
+        <section class="section home-section" id="home">
+            <div class="home-content">
+                <div class="home-text">
+                    <div class="no-pointer">
+                        <h1 id="tagline" class="hs-line-8 mb-40">Explore A New Reality</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <p class="intro-copy">This winter join.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="local-scroll main-button">
+                        <a href="#home-overview" class="btn btn-mod btn-border-w btn-large btn-round">Explore!</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#home-overview" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+        </section>
+    <section class="section page-section" id="home-main">
+        <div class="relative">
+            <h2 class="section-title font-alt">Random Text</h2>
+            <div class="section-text mb-10 mb-sm-20">
+                <div class="col-md-8 mb-10 col-md-offset-2 text-center ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa et impedit laudantium numquam officia similique veniam? Debitis doloribus id ipsam ipsum magni odio omnis quasi, repellendus rerum saepe sed soluta?</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row">
+            <ul id="home-nav">
+                <li class="home-item">
+                    <div id="ideas-link" class="home-link col-sm-4">
+                        <a id="se-ma" href="#home-ideas">
+                            <div class="icon">
+                                <svg  x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;">
+                                    <style type="text/css">
+                                        .ma0{fill:#FFFFFF;}
+                                        .ma1{fill:#0099FF;}
+                                        .ma2{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+                                        .ma3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+                                    </style>
+                                    <g>
+                                        <rect id="market" x="18.2" y="27.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.7584 22.2416)" class="ma0" width="0.4" height="7.7"></rect>
+                                    </g>
+                                    <g id="lightbulb">
+                                        <path class="ma1" d="M24.9,15C19,15,14,19.9,14,25.9c0,4,2,8,5,10.3v3.4c0,0.9,1.3,0.9,2.3,0.9h7.3c0.9,0,2.4,0.1,2.4-0.9v-3.5&#10;		c3-2.2,4.9-6.2,4.9-10.2C35.9,19.9,30.8,15,24.9,15z M31.7,21.7v3.7c0,0.1-0.1,0.2-0.2,0.2s-0.2,0-0.3-0.1l-1-1l-5.3,5.3&#10;		c-0.1,0.1-0.1,0.1-0.2,0.1s-0.1,0-0.2-0.1l-2-2L19,31.3l-0.8-0.8l-0.7-0.7l4.9-4.9c0.1-0.1,0.1-0.1,0.2-0.1s0.1,0,0.2,0.1l2,2&#10;		l3.9-3.9l-1-1c-0.1-0.1-0.1-0.2-0.1-0.3c0-0.1,0.1-0.2,0.2-0.2h3.7c0.1,0,0.1,0,0.2,0.1C31.7,21.6,31.7,21.7,31.7,21.7z"></path>
+                                        <path class="ma0" d="M29.2,43.6h-8.5c-0.4,0-0.7-0.3-0.7-0.7l0,0c0-0.4,0.3-0.7,0.7-0.7h8.5c0.4,0,0.7,0.3,0.7,0.7l0,0&#10;		C29.9,43.2,29.6,43.6,29.2,43.6z"></path>
+                                        <path class="ma0" d="M28.7,45.8h-7.6c-0.4,0-0.7-0.3-0.7-0.7l0,0c0-0.4,0.3-0.7,0.7-0.7h7.6c0.4,0,0.7,0.3,0.7,0.7l0,0&#10;		C29.4,45.5,29.1,45.8,28.7,45.8z"></path>
+                                        <path class="ma0" d="M27.5,48h-5.2c-0.4,0-0.7-0.3-0.7-0.7l0,0c0-0.4,0.3-0.7,0.7-0.7h5.2c0.4,0,0.7,0.3,0.7,0.7l0,0&#10;		C28.2,47.7,27.9,48,27.5,48z"></path>
+                                    </g>
+                                    <g id="lines">
+                                        <line class="ma2" x1="24.9" y1="13.4" x2="24.9" y2="2.4"></line>
+                                        <line class="ma3" x1="29.7" y1="14.3" x2="32.8" y2="6.8"></line>
+                                        <line class="ma2" x1="34" y1="17" x2="43.8" y2="6.8"></line>
+                                        <line class="ma3" x1="36.5" y1="21.5" x2="44.9" y2="18.7"></line>
+                                        <line class="ma2" x1="37.2" y1="26.8" x2="49.1" y2="26.8"></line>
+                                        <line class="ma3" x1="36.1" y1="31.8" x2="43.6" y2="34.5"></line>
+                                        <line class="ma3" x1="20.3" y1="14.3" x2="17.2" y2="6.8"></line>
+                                        <line class="ma2" x1="16" y1="17" x2="6.2" y2="6.8"></line>
+                                        <line class="ma3" x1="13.5" y1="21.5" x2="5.1" y2="18.7"></line>
+                                        <line class="ma2" x1="12.8" y1="26.8" x2="0.9" y2="26.8"></line>
+                                        <line class="ma3" x1="13.9" y1="31.8" x2="6.4" y2="34.6"></line>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class="home-title">Recommend Ideas<i class="fa fa-angle-right"></i></p>
+                        </a>
+                    </div>
+                </li>
+                <li class="home-item">
+                    <div id="production-link" class=" home-link col-sm-4">
+                        <a id="se-pr" href="#home-production">
+                            <div class="icon">
+                                <svg version="1.1" id="gears" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;">
+                                    <style type="text/css">
+                                        .gear0{fill:#FFFFFF;}
+                                        .gear1{fill:#0099FF;}
+                                    </style>
+                                    <title>production</title>
+                                    <g id="wheel1">
+                                        <path class="gear0" d="M14.5,17.4c-6.1,0-11,4.9-11,11s4.9,11,11,11s11-4.9,11-11S20.6,17.4,14.5,17.4L14.5,17.4z M14.5,36.8&#10;		C9.8,36.8,6,33,6,28.3s3.8-8.5,8.5-8.5s8.5,3.8,8.5,8.5l0,0C23,33.2,19.2,36.8,14.5,36.8z"></path>
+                                        <path class="gear0" d="M12.3,14.8H16c0.1,0,0.3,0.1,0.3,0.3l0,0l0.4,4.5c0,0.1-0.1,0.3-0.3,0.3l0,0h-4.6c-0.1,0-0.3-0.1-0.3-0.3l0,0&#10;		l0.5-4.5C12,15,12.1,14.9,12.3,14.8L12.3,14.8z"></path>
+                                        <path class="gear0" d="M12.3,42H16c0.1,0,0.3-0.1,0.3-0.3l0.4-4.5c0-0.1-0.1-0.3-0.2-0.3l0,0h-4.6c-0.1,0-0.3,0.1-0.3,0.3l0.4,4.5&#10;		C12,41.8,12.1,42,12.3,42L12.3,42z"></path>
+                                        <path class="gear0" d="M3.3,20.1l2.6-2.6c0.1-0.1,0.3-0.1,0.4,0l0,0l3.5,2.9c0.1,0.1,0.1,0.3,0,0.4l0,0L6.5,24&#10;		c-0.1,0.1-0.3,0.1-0.4,0l0,0l-2.9-3.5C3.2,20.4,3.1,20.2,3.3,20.1L3.3,20.1z"></path>
+                                        <path class="gear0" d="M22.8,39.7l2.6-2.6c0.1-0.1,0.1-0.3,0-0.4l0,0l-2.9-3.5c-0.1-0.1-0.3-0.1-0.4,0l0,0l-3.2,3.2&#10;		c-0.1,0.1-0.1,0.3,0,0.4l0,0l3.5,2.9C22.6,39.8,22.7,39.8,22.8,39.7L22.8,39.7z"></path>
+                                        <path class="gear0" d="M0.6,30.2v-3.7c0-0.1,0.1-0.2,0.2-0.3l4.6-0.5c0.1,0,0.3,0.1,0.3,0.3l0,0v4.5c0,0.1-0.1,0.3-0.3,0.3l0,0&#10;		l-4.6-0.4C0.7,30.5,0.6,30.3,0.6,30.2z"></path>
+                                        <path class="gear0" d="M28.4,30.2v-3.7c0-0.1-0.1-0.3-0.3-0.3l0,0l-4.5-0.4c-0.1,0-0.3,0.1-0.3,0.3l0,0v4.5c0,0.1,0.1,0.3,0.3,0.3&#10;		l0,0l4.5-0.4C28.3,30.5,28.4,30.4,28.4,30.2z"></path>
+                                        <path class="gear0" d="M5.8,39.2l-2.6-2.6c-0.1-0.1-0.1-0.3,0-0.4l0,0l2.9-3.5c0.1-0.1,0.3-0.1,0.4,0l0,0L9.7,36&#10;		c0.1,0.1,0.1,0.3,0,0.4l0,0l-3.5,2.9C6.1,39.4,6,39.4,5.8,39.2C5.8,39.3,5.8,39.3,5.8,39.2z"></path>
+                                        <path class="gear0" d="M25.4,20l-2.6-2.6c-0.1-0.1-0.3-0.1-0.4,0l0,0l-3.5,2.9c-0.1,0.1-0.1,0.3,0,0.4l0,0l3.2,3.2&#10;		c0.1,0.1,0.3,0.1,0.4,0l0,0l2.9-3.5C25.5,20.3,25.5,20.1,25.4,20L25.4,20z"></path>
+                                        <path class="gear1" d="M16.1,20.6c-4.3-0.9-8.6,1.9-9.5,6.2s1.9,8.6,6.2,9.5s8.6-1.9,9.5-6.2V30C23.2,25.6,20.4,21.5,16.1,20.6z&#10;		 M13.3,34.8c-3.5-0.7-5.7-4.1-5-7.6s4.1-5.7,7.6-5s5.7,4.1,5,7.6l0,0C20.1,33.2,16.7,35.4,13.3,34.8z"></path>
+                                    </g>
+                                    <g id="wheel2">
+                                        <path class="gear0" d="M41.7,15c-2.2-3.7-7.1-4.9-10.8-2.7s-4.9,7.1-2.7,10.8c2.2,3.7,7.1,4.9,10.8,2.7S43.9,18.7,41.7,15L41.7,15z&#10;		 M29.7,22.1c-1.7-2.9-0.8-6.6,2.1-8.3c2.9-1.7,6.6-0.8,8.3,2.1s0.8,6.6-2.1,8.3l0,0C35.2,26,31.5,25,29.7,22.1z"></path>
+                                        <path class="gear0" d="M42.4,12.6l1.4,2.3c0.1,0.1,0,0.2-0.1,0.3l0,0l-2.6,1.9c-0.1,0.1-0.2,0-0.3-0.1l0,0l-1.7-2.8&#10;		c-0.1-0.1,0-0.2,0.1-0.3l0,0l2.9-1.3C42.2,12.5,42.3,12.5,42.4,12.6L42.4,12.6z"></path>
+                                        <path class="gear0" d="M25.8,22.6l1.4,2.3c0.1,0.1,0.2,0.1,0.3,0.1l3-1.4c0.1,0,0.1-0.2,0.1-0.3l0,0l-1.9-2.8&#10;		c-0.1-0.1-0.2-0.1-0.3-0.1l-2.6,1.9C25.7,22.4,25.7,22.5,25.8,22.6L25.8,22.6z"></path>
+                                        <path class="gear0" d="M35.9,9l2.5,0.6c0.1,0,0.2,0.1,0.1,0.2l0,0L38,13c0,0.1-0.1,0.2-0.2,0.1l0,0l-3.1-0.6c-0.1,0-0.2-0.1-0.1-0.2&#10;		l0,0l1.1-3.1C35.6,9.1,35.7,9,35.9,9C35.8,9,35.8,9,35.9,9z"></path>
+                                        <path class="gear0" d="M31.1,28.3l2.5,0.6c0.1,0,0.2,0,0.2-0.1l0,0l1.1-3.1c0-0.1,0-0.2-0.1-0.2l0,0l-3.2-0.8c-0.1,0-0.2,0-0.2,0.1&#10;		l0,0L30.9,28C30.9,28.1,31,28.2,31.1,28.3L31.1,28.3z"></path>
+                                        <path class="gear0" d="M28.7,11.1L31,9.7c0.1,0,0.2,0,0.2,0l1.9,2.8c0.1,0.1,0,0.2-0.1,0.3l0,0l-2.8,1.7c-0.1,0.1-0.2,0-0.3-0.1l0,0&#10;		l-1.4-3C28.5,11.3,28.6,11.2,28.7,11.1z"></path>
+                                        <path class="gear0" d="M38.9,28.3l2.3-1.4c0.1-0.1,0.1-0.2,0.1-0.3l0,0l-1.4-3c-0.1-0.1-0.2-0.1-0.3-0.1l0,0l-2.8,1.7&#10;		c-0.1,0.1-0.1,0.2-0.1,0.3l0,0l1.9,2.6C38.7,28.3,38.8,28.3,38.9,28.3z"></path>
+                                        <path class="gear0" d="M25,17.7l0.6-2.5c0-0.1,0.1-0.2,0.2-0.1l0,0l3.3,0.4c0.1,0,0.2,0.1,0.1,0.2l0,0l-0.8,3.2&#10;		c0,0.1-0.1,0.2-0.2,0.1l0,0l-3.1-1.1C25.1,17.9,25,17.8,25,17.7L25,17.7z"></path>
+                                        <path class="gear0" d="M44.1,22.6l0.6-2.6c0-0.1,0-0.2-0.1-0.2l0,0l-3.1-1.1c-0.1,0-0.2,0-0.2,0.1l0,0L40.5,22c0,0.1,0,0.2,0.1,0.2&#10;		l0,0l3.2,0.5C44,22.8,44.1,22.7,44.1,22.6L44.1,22.6z"></path>
+                                        <path class="gear1" d="M40.3,17.1c-1-3-4.3-4.6-7.3-3.5s-4.6,4.3-3.5,7.3c1,3,4.3,4.6,7.3,3.5c0,0,0,0,0.1,0&#10;		C39.8,23.3,41.4,20.1,40.3,17.1z M30.6,20.6c-0.9-2.4,0.4-5,2.8-5.9c2.4-0.9,5,0.4,5.9,2.8s-0.4,5-2.8,5.9l0,0&#10;		C34.1,24.2,31.4,23,30.6,20.6z"></path>
+                                    </g>
+                                    <g id="wheel3">
+                                        <path class="gear0" d="M46.9,30.3c-2.2-2.4-5.9-2.5-8.2-0.3c-2.4,2.2-2.5,5.9-0.3,8.2c2.2,2.4,5.9,2.5,8.2,0.3&#10;		C48.9,36.4,49.1,32.7,46.9,30.3L46.9,30.3z M39.3,37.3c-1.7-1.8-1.6-4.7,0.2-6.3s4.7-1.6,6.3,0.2c1.6,1.8,1.6,4.7-0.2,6.3l0,0&#10;		C43.9,39.3,41,39.2,39.3,37.3z"></path>
+                                        <path class="gear0" d="M47.1,28.5l1.3,1.4c0.1,0.1,0,0.1,0,0.2l0,0l-1.6,1.8c-0.1,0.1-0.1,0-0.2,0l0,0l-1.7-1.8c-0.1-0.1,0-0.1,0-0.2&#10;		l0,0l1.9-1.4C46.9,28.5,47,28.5,47.1,28.5C47,28.5,47,28.5,47.1,28.5z"></path>
+                                        <path class="gear0" d="M36.6,38.3l1.3,1.4c0.1,0.1,0.1,0.1,0.2,0l1.9-1.5c0.1,0,0.1-0.1,0-0.2l0,0l-1.6-1.8c-0.1-0.1-0.1-0.1-0.2,0&#10;		L36.6,38C36.5,38.1,36.5,38.2,36.6,38.3C36.5,38.3,36.6,38.3,36.6,38.3z"></path>
+                                        <path class="gear0" d="M41.7,26.9l1.9,0.1c0.1,0,0.1,0.1,0.1,0.1l0,0l0.1,2.4c0,0.1-0.1,0.1-0.1,0.1l0,0l-2.4-0.1&#10;		c-0.1,0-0.1-0.1-0.1-0.1l0,0l0.3-2.4C41.6,27,41.7,26.9,41.7,26.9L41.7,26.9z"></path>
+                                        <path class="gear0" d="M41.3,41.5l1.9,0.1c0.1,0,0.1-0.1,0.1-0.1l0,0l0.3-2.4c0-0.1-0.1-0.1-0.1-0.1l0,0l-2.4-0.1&#10;		C41,38.9,41,39,41,39l0,0l0.1,2.4C41.1,41.5,41.2,41.5,41.3,41.5L41.3,41.5z"></path>
+                                        <path class="gear0" d="M36.9,29.5l1.4-1.3c0,0,0.1-0.1,0.2,0l1.8,1.6c0.1,0.1,0,0.1,0,0.2l0,0l-1.8,1.7c-0.1,0.1-0.1,0-0.2,0l0,0&#10;		l-1.5-2C36.8,29.7,36.8,29.6,36.9,29.5z"></path>
+                                        <path class="gear0" d="M46.9,40.3l1.4-1.3c0.1-0.1,0.1-0.1,0-0.2l0,0l-1.5-1.9c-0.1-0.1-0.1-0.1-0.2,0l0,0l-1.8,1.6&#10;		c-0.1,0.1-0.1,0.1,0,0.2l0,0l1.8,1.6C46.8,40.4,46.9,40.4,46.9,40.3z"></path>
+                                        <path class="gear0" d="M35.3,34.8l0.1-1.9c0-0.1,0.1-0.1,0.1-0.1l0,0l2.4-0.1c0.1,0,0.1,0.1,0.1,0.1l0,0l-0.1,2.4&#10;		c0,0.1-0.1,0.1-0.1,0.1l0,0L35.4,35C35.3,35,35.3,34.9,35.3,34.8L35.3,34.8z"></path>
+                                        <path class="gear0" d="M49.8,35.5l0.1-1.9c0-0.1-0.1-0.1-0.1-0.1l0,0l-2.4-0.3c-0.1,0-0.1,0.1-0.1,0.1l0,0l-0.2,2.3&#10;		c0,0.1,0.1,0.1,0.1,0.1l0,0l2.4-0.1C49.7,35.6,49.8,35.6,49.8,35.5L49.8,35.5z"></path>
+                                        <path class="gear1" d="M46.2,32.1c-1.2-2-3.8-2.6-5.8-1.4s-2.6,3.8-1.4,5.8s3.8,2.6,5.8,1.4l0,0C46.8,36.6,47.4,34.1,46.2,32.1z&#10;		 M39.7,36.1c-1-1.6-0.5-3.7,1.1-4.7s3.7-0.5,4.7,1.1c1,1.6,0.5,3.7-1.1,4.7l0,0C42.8,38.2,40.7,37.7,39.7,36.1z"></path>
+                                    </g>
+
+                                </svg>
+                            </div>
+                            <p class="home-title">Production Studio <i class="fa fa-angle-right"></i></p>
+                        </a>
+                    </div>
+                </li>
+                <li class="home-item">
+                    <div id="social-link" class="home-link col-sm-4">
+                        <a id="se-sm" href="#home-social-media">
+                            <div class="icon">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                     viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;">
+                                    <style type="text/css">
+                                        .sm0{fill:#FFFFFF;}
+                                        .sm1{fill:#0099FF;stroke:#FFFFFF;stroke-miterlimit:10;}
+                                    </style>
+                                    <path id="bubble1" class="sm0" d="M0.8,21.5c0-4.1,4.5-7.3,10-7.3s10,3.3,10,7.3c0,3.9-4.1,7.1-9.4,7.3c-2,2.4-5.3,4-6.4,4&#10;	c1.4-1.1,2.5-2.6,3.1-4.3C3.9,27.7,0.8,24.9,0.8,21.5z"></path>
+                                    <path id="bubble2" class="sm0" d="M29.2,27.4c0-4.1,4.5-7.3,10-7.3s10,3.3,10,7.3c0,3.9-4.1,7.1-9.4,7.3c-2,2.4-5.3,4-6.4,4&#10;	c1.4-1.1,2.5-2.6,3.1-4.3C32.3,33.6,29.2,30.7,29.2,27.4z"></path>
+                                    <path class="sm1" d="M7.9,22c0-6.1,6.7-11.1,15.1-11.1S38,15.9,38,22c0,5.9-6.2,10.7-14.1,11c-2.9,3.6-7.9,6.1-9.6,6.1&#10;	c2.2-1.6,3.8-3.9,4.7-6.5C12.6,31.4,7.9,27.1,7.9,22z"></path>
+
+                                    <circle id="dot1" class="sm0" cx="18.6" cy="22.5" r="1"></circle>
+                                    <circle id="dot2" class="sm0" cx="22.7" cy="22.5" r="1"></circle>
+                                    <circle id="dot3" class="sm0" cx="26.7" cy="22.5" r="1"></circle>
+                                </svg>
+                            </div>
+                            <p class="home-title">Testimonials<i class="fa fa-angle-right"></i></p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <section class="section page-section" id="ideas">
+        <div class="relative">
+            <div class="container section-text mb-sm-20">
+                <div id="ideas-main" class="row">
+                    <h2 class="section-title font-alt ">BLAH BLAH</h2>
+                    <div class="col-sm-12 text-center">
+                        <h3>Got An Idea For An Event</h3>
+                    </div><div class="col-sm-12 mt-10 text-center">
+                    <p>BLAH</p>
+                    <button id="expandideas" class="mt-10 btn btn-primary btn-mod btn-border-w btn-large btn-round" type="button" aria-expanded="false" aria-controls="collapseideas">Learn More</button>
+                </div>
+                </div>
+                <div class="collapse" id="collapseideas">
+                    <div class="card card-block">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <h3>Text
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="strategy" class="detail-block col-sm-4 col-sm-offset-2">
+                                <h4>Text</h4>
+                                <p>Text.</p>
+                            </div>
+                            <div id="ux" class="detail-block col-sm-4">
+                                <h4>Text</h4>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                        <div class="row mt-40">
+                            <button id="backideas" class="btn btn-primary btn-mod btn-border-w btn-large btn-round" type="button" aria-expanded="false" aria-controls="collapseideas">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section page-section" id="production">
+        <div class="relative">
+            <div class="container section-text mb-10 mb-sm-20">
+                <div id="production-main"><h2 class="section-title font-alt">BLAh
+                </h2>
+                    <div class="col-sm-12 text-center">
+                        <h3>P</h3>
+                    </div>
+                    <div class="col-sm-12 mt-10 text-center">
+                        <p>Text</p>
+                        <button id="expandProduction" class="mt-10 btn btn-primary btn-mod btn-border-w btn-large btn-round" type="button" aria-expanded="false">Learn More</button>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseProduction">
+                    <div class="card card-block">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eligendi, laborum nesciunt quaerat recusandae repudiandae sequi. Animi consequatur ipsum iusto reprehenderit veritatis! Ipsa porro quia quis quos sequi ullam veniam? o</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="creative" class="detail-block col-sm-4 col-sm-offset-2">
+                        <div class="detail-bg">
+                            <h4>Creative</h4>
+                            <p class="text-left">Web Design.</p>
+                        </div>
+                            </div>
+                            <div id="technology" class="detail-block col-sm-4">
+                                <div class="detail-bg">
+                                    <h4>Technology</h4>
+                                    <p>Front and Back-end </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-30">
+                            <button id="backProduction" class="btn btn-primary btn-mod btn-border-w btn-large btn-round" type="button" aria-expanded="false">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section page-section" id="socialmedia">
+        <div class="relative">
+            <div class="container section-text mb-10 mb-sm-20">
+                <div id="social-main" class="row">
+                    <h2 class="section-title font-alt">Text</h2>
+                    <div class="col-sm-12 text-center">
+                        <h3>What People Say</h3>
+                    </div>
+                    <div class="col-sm-12 mt-10 text-center">
+                        <p>Text</p>
+                        <button id="expandSocial" class=" mt-10 btn btn-primary btn-mod btn-border-w btn-large btn-round" type="button" aria-expanded="false">Learn More</button>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseSocial">
+                    <div class="card card-block">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <h3>Header</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="Management" class="detail-block col-sm-4 col-sm-offset-2">
+                                <h4>Manage</h4>
+                                <p>CText
+                                </p>
+                            </div>
+                            <div id="content" class="detail-block col-sm-4">
+                                <h4>Content</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dicta, ea iste minus nisi officia qui ratione? Adipisci animi, corporis, fugit magnam maxime optio perspiciatis qui rerum ullam ut, vitae?</p>
+                            </div>
+                        </div>
+                        <div class="row mt-20">
+                            <button id="backSocial" class="btn btn-primary btn-mod btn-border-w btn-large btn-round" type="button" aria-expanded="false">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+    <section class="section page-section pb-0" id="contact">
+        <div id="contact-jumbotron"></div>
+        <div class="container relative"><h1 class="section-title">Let's Connect</h1>
+            <div class="section-text">
+                <div class="row">
+                    <div class="col-md-8 mb-20 col-md-offset-2 text-center"><p>Got a story? Tell us.<br>We want to
+                        hear from you.</p></div>
+                </div>
+            </div>
+            <div class="row mb-40 mb-xs-420">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="contact-item col-xs-12 col-sm-4 pt-10 pb-10 pb-xs-0">
+                            <div class="ci-icon"><i class="fa fa-phone"></i></div>
+                            <div class="ci-text">(+91)9004363650</div>
+                        </div>
+                        <div class="contact-item col-xs-12 col-sm-4 pt-10 pb-10 pb-xs-0">
+                            <div class="ci-icon mb-10"><i class="fa fa-map-marker"></i></div>
+                            <div class="ci-text">Symbiosis Institute Of Technology <br> Near Lupin Research Park, Lavale<br>Pune-412115
+                            </div>
+                        </div>
+                        <div class="contact-item col-xs-12 col-sm-4 pt-10 pb-10 pb-xs-0">
+                            <div class="ci-icon mb-10"><i class="fa fa-envelope"></i></div>
+                            <div class="ci-text"><a href="mailto:vshetty.vs@gmail.com">vedant.shetty@sitpune.edu.in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contactform" class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="form contact-form" id="contact_form" method="post">
+                        <div class="clearfix">
+                            <div class="form-group"><input type="text" name="name" id="name"
+                                                           class="input-lg round form-control" placeholder="Name"
+                                                           pattern=".{3,100}" required></div>
+                            <div class="form-group"><input type="text" name="company" id="company"
+                                                           class="input-lg round form-control" placeholder="College"
+                                                           pattern=".{3,100}" required></div>
+                            <div class="form-group"><input type="tel" name="phone" id="phone"
+                                                           class="input-lg round form-control" placeholder="Phone"
+                                                           pattern=".{3,100}" required></div>
+                            <div class="form-group"><input type="email" name="email" id="email"
+                                                           class="input-lg round form-control" placeholder="Email"
+                                                           pattern=".{5,100}" required></div>
+                            <div class="form-group"><textarea name="message" id="message"
+                                                              class="input-lg round form-control" style="height: 178px;"
+                                                              placeholder="Message"></textarea></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="container-fluid">
+                                <div class="align-center pt-10 mt-20 mb-40">
+                                    <button type="submit"
+                                            class="btn btn-mod btn-border-w btn-large btn-round align-center"
+                                            id="submit_btn">Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section page-section footer" id="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li class="footer-home"><a href="index.html" class="btn btn-mod btn-border-w btn-large btn-round">What
+                        We Do</a></li>
+                    <li class="footer-about"><a href="about.html" class="btn btn-mod btn-border-w btn-large btn-round">Who
+                        We Are</a></li>
+                    <li class="footer-work"><a href="events.html" class="btn btn-mod btn-border-w btn-large btn-round">See
+                        Our Events</a></li>
+                    <li class="footer-contact"><a href="contact.html"
+                                                  class="btn btn-mod btn-border-w btn-large btn-round">Say Hello</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-links mb-110 mb-xs-60">
+                <div class="row align-center mb-30 mb-xs-20">
+                    <div class="fb-like" data-href="https://www.facebook.com/techela.16/" data-layout="button_count"
+                         data-action="like" data-show-faces="false"></div>
+                    <a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false">Follow
+                        @Techela</a>
+                    <script>!function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + '://platform.twitter.com/widgets.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'twitter-wjs');
+                    </script></div>
+                <div class="footer-text">
+                    <div class="footer-copy font-alt">Symbiosis Institute Of Technology</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=774192675980421";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.index .nav-link').addClass("active");
+        $('.footer-contact').css('display', 'none');
+    });
+</script>
