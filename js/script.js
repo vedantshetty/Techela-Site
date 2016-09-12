@@ -45107,7 +45107,7 @@ var SPE = {
                     scrollingSpeed: 1e3,
                     hybrid: !1,
                     navigation: !0,
-                    anchors: ["intro", "home-overview", "home-ideas", "hom-production", "home-social-media", "contact-us", "the-end"],
+                    anchors: ["intro", "home-overview", "home-ideas", "home-production", "home-social-media", "contact-us", "the-end"],
                     navigationTooltips: ["Intro", "Home", "Ideas", "Production Services", "Social Media home", "Contact Us", "The End"],
                     afterLoad: function(a) {
                         M()
