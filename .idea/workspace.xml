@@ -59,17 +59,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="612" column="60" selection-start-line="612" selection-start-column="60" selection-end-line="612" selection-end-column="60" />
+            <state relative-caret-position="299">
+              <caret line="402" column="67" selection-start-line="402" selection-start-column="67" selection-end-line="402" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/events.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-150">
@@ -123,8 +123,8 @@
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/events.html" />
+        <option value="$PROJECT_DIR$/about.html" />
       </list>
     </option>
   </component>
@@ -321,7 +321,7 @@
       <workItem from="1473683879203" duration="7281000" />
       <workItem from="1473708164628" duration="132000" />
       <workItem from="1473789127231" duration="1007000" />
-      <workItem from="1473790298556" duration="9467000" />
+      <workItem from="1473790298556" duration="10391000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Javascript&#10;">
       <created>1472816834795</created>
@@ -334,7 +334,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77447000" />
+    <option name="totallyTimeSpent" value="78371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -481,14 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="612" column="60" selection-start-line="612" selection-start-column="60" selection-end-line="612" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
@@ -497,6 +489,14 @@
             <element signature="n#style#0;n#img#0;n#figure#0;n#a#0;n#li#8;n#ul#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#8;n#ul#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="402" column="67" selection-start-line="402" selection-start-column="67" selection-end-line="402" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
