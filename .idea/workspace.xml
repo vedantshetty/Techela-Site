@@ -26,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="560" column="54" selection-start-line="560" selection-start-column="54" selection-end-line="560" selection-end-column="54" />
+            <state relative-caret-position="9330">
+              <caret line="622" column="81" selection-start-line="622" selection-start-column="81" selection-end-line="622" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="324" column="50" selection-start-line="324" selection-start-column="50" selection-end-line="324" selection-end-column="50" />
+            <state relative-caret-position="5730">
+              <caret line="382" column="30" selection-start-line="382" selection-start-column="30" selection-end-line="382" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="402" column="67" selection-start-line="402" selection-start-column="67" selection-end-line="402" selection-end-column="67" />
+            <state relative-caret-position="105">
+              <caret line="403" column="57" selection-start-line="403" selection-start-column="57" selection-end-line="403" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -72,8 +72,8 @@
       <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/events.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="420" column="54" selection-start-line="420" selection-start-column="54" selection-end-line="420" selection-end-column="54" />
+            <state relative-caret-position="9990">
+              <caret line="666" column="30" selection-start-line="666" selection-start-column="30" selection-end-line="666" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#figure#0;n#a#0;n#li#8;n#ul#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#8;n#ul#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="190110">
               <caret line="12674" column="33" selection-start-line="12674" selection-start-column="26" selection-end-line="12674" selection-end-column="33" />
               <folding />
             </state>
@@ -121,9 +121,9 @@
         <option value="$PROJECT_DIR$/reverbthefest.com/events.html" />
         <option value="$PROJECT_DIR$/reverbthefest.com/index.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/events.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/about.html" />
       </list>
     </option>
@@ -321,7 +321,9 @@
       <workItem from="1473683879203" duration="7281000" />
       <workItem from="1473708164628" duration="132000" />
       <workItem from="1473789127231" duration="1007000" />
-      <workItem from="1473790298556" duration="10391000" />
+      <workItem from="1473790298556" duration="10496000" />
+      <workItem from="1473873779217" duration="3148000" />
+      <workItem from="1473877362129" duration="1156000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented Javascript&#10;">
       <created>1472816834795</created>
@@ -334,7 +336,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78371000" />
+    <option name="totallyTimeSpent" value="82780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -443,6 +445,22 @@
     <entry file="file://$PROJECT_DIR$/reverbthefest.com/contact.html" />
     <entry file="file://$PROJECT_DIR$/reverbthefest.com/events.html" />
     <entry file="file://$PROJECT_DIR$/reverbthefest.com/index.html" />
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5730">
+          <caret line="382" column="30" selection-start-line="382" selection-start-column="30" selection-end-line="382" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9330">
+          <caret line="622" column="81" selection-start-line="622" selection-start-column="81" selection-end-line="622" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676635">
@@ -457,34 +475,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="12674" column="33" selection-start-line="12674" selection-start-column="26" selection-end-line="12674" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="560" column="54" selection-start-line="560" selection-start-column="54" selection-end-line="560" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="324" column="50" selection-start-line="324" selection-start-column="50" selection-end-line="324" selection-end-column="50" />
+        <state relative-caret-position="105">
+          <caret line="403" column="57" selection-start-line="403" selection-start-column="57" selection-end-line="403" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/events.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="420" column="54" selection-start-line="420" selection-start-column="54" selection-end-line="420" selection-end-column="54" />
+        <state relative-caret-position="9990">
+          <caret line="666" column="30" selection-start-line="666" selection-start-column="30" selection-end-line="666" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#img#0;n#figure#0;n#a#0;n#li#8;n#ul#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#8;n#ul#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -492,10 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="402" column="67" selection-start-line="402" selection-start-column="67" selection-end-line="402" selection-end-column="67" />
+        <state relative-caret-position="190110">
+          <caret line="12674" column="33" selection-start-line="12674" selection-start-column="26" selection-end-line="12674" selection-end-column="33" />
           <folding />
         </state>
       </provider>
