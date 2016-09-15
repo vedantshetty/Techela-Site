@@ -30,24 +30,24 @@
     });
 </script>
 <script type="x-shader/x-vertex" id="vertexShader">
-			varying vec3 vWorldPosition;
-			void main() {
-				vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
-				vWorldPosition = worldPosition.xyz;
-				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
-			}
+            varying vec3 vWorldPosition;
+            void main() {
+                vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+                vWorldPosition = worldPosition.xyz;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+            }
 
 </script>
 <script type="x-shader/x-fragment" id="fragmentShader">
-			uniform vec3 topColor;
-			uniform vec3 bottomColor;
-			uniform float offset;
-			uniform float exponent;
-			varying vec3 vWorldPosition;
-			void main() {
-				float h = normalize( vWorldPosition + offset ).y;
-				gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h , 0.0), exponent ), 0.0 ) ), 1.0 );
-			}
+            uniform vec3 topColor;
+            uniform vec3 bottomColor;
+            uniform float offset;
+            uniform float exponent;
+            varying vec3 vWorldPosition;
+            void main() {
+                float h = normalize( vWorldPosition + offset ).y;
+                gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h , 0.0), exponent ), 0.0 ) ), 1.0 );
+            }
 
 </script>
 <div class="content">
@@ -56,7 +56,7 @@
         <div class="nav-wrapper"></div>
         <div class="full-wrapper relative clearfix">
             <div class="nav-logo-wrap local-scroll">
-                <a href="index.html" class="logo">
+                <a href="/" class="logo">
                     <svg
 
                             id="svglogo"
@@ -268,7 +268,7 @@
             <div class="inner-nav desktop-nav">
                 <ul class="clearlist scroll-nav local-scroll">
                     <li class="home">
-                        <a id="home-link" href="index.html" class="nav-link">
+                        <a id="home-link" href="/" class="nav-link">
                             <span data-text="home">Home</span>
                         </a>
                     </li>
@@ -747,7 +747,7 @@
         <div class="container">
             <div class="footer-links">
                 <ul>
-                    <li class="footer-home"><a href="index.html" class="btn btn-mod btn-border-w btn-large btn-round">What
+                    <li class="footer-home"><a href="/" class="btn btn-mod btn-border-w btn-large btn-round">What
                         We Do</a></li>
                     <li class="footer-about"><a href="about.html" class="btn btn-mod btn-border-w btn-large btn-round">Who
                         We Are</a></li>
